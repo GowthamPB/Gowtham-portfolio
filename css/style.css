@@ -16,7 +16,7 @@ body{
     padding-left:50px;
 }
 .logo:hover{
-    color:red;
+    color:#ff5c00;
 }
 #navbar{
     background-color:black;
@@ -42,18 +42,26 @@ body{
     font-size:20px;   
 }
 .nav-link a:hover{
-    color:red; 
+    color:#ff9200; 
 }  
 #welcome-section{
-    background-color: white;
+    background-color: rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
     height:100vh;
     text-align:center;
 }
+#emoji{
+    width:50px;
+    animation: moves 3s infinite;
+}
+#gif{
+    height:70px;
+    width:70px;
+    margin-top:225px;
+    
+}
 #welcome-section h1{
     padding-top:35vh;
-}
-#welcome-section img{
-    width:50px;
 }
 .container h2{
     text-align:center;
@@ -63,6 +71,9 @@ body{
     color:white;
     padding:20px 0 0 0;   
 }
+#about-me h2{
+    color:#ff5c00;
+}
 #about{
     display:flex;
     justify-content: space-around;
@@ -71,12 +82,9 @@ body{
     width:40%;
     padding:100px 0;
 }
-#about-me hr{
-    width:50%;
-}
 #about-me img{
-    width:600px;
-    height:auto;
+    width:550px;
+    height:550px;
 }
 .about{
     display:flex;
@@ -88,9 +96,6 @@ body{
 }
 #skills p{
     padding-top:30px;
-}
-#skills hr{
-    width:50%;
 }
 .skill-list{
     display:flex;
@@ -107,12 +112,12 @@ body{
     color:white;
     padding:20px;
 }
+#projects h2{
+    color:#ff5c00;
+}
 #projects p{
     text-align:center;
     padding-top:20px;
-}
-#projects hr{
-    width:50%;
 }
 .project-tile{
     height:600px;
@@ -133,7 +138,6 @@ body{
     text-align:center;
 }
 .project-details{
-    
     padding:0 30px;
 }
 button a{
@@ -147,7 +151,11 @@ button{
    margin:20px 50px;
    background-color: black;
    color: cornsilk;
-  
+}
+button:hover{
+    background-color: gold;
+    color:black;
+    border:none;
 }
 .row{
     display:flex;
@@ -157,9 +165,6 @@ button{
 #contact-me{
     background-color: white;
     color: black;
-}
-#contact-me hr{
-    width:50%;
 }
 .Ct,form p{
     text-align: center;
@@ -184,7 +189,7 @@ form{
     background-color: gold;
 }
 #submit:hover{
-    background-color: lime;
+    background-color: #ff5c00;
 }
 textarea{
     resize:none;
@@ -212,9 +217,43 @@ footer{
     margin:40px 0 0 0;
     padding:0.1em;
 }
-@media(max-width:1500px){
+footer a{
+    color:white;
+}
+hr{
+    width:35%;
+    color:#ff5c00;
+}
+@keyframes moves{
+    50%{
+        transform:rotate(75deg);
+    }
+}
+@media(max-width:1350px){
 .nav-link{
     display:inline;
-    margin:0 10px; 
+    margin:0 20px; 
+}
+#navbar{
+    flex-direction: column;
+    text-align: center;
+padding-bottom: 20px;
 }
 }
+@media(max-width:800px){
+    .nav-link{
+        display:inline;
+        margin:0 20px; 
+    }
+    #navbar{
+        flex-direction: column;
+        text-align: center;
+    padding-bottom: 20px;
+    }
+    #welcome-section h1{
+        padding-top: 50vh;
+    }
+    #gif{
+        padding-top:0px;
+    }
+    }
