@@ -1,2 +1,2 @@
 # Gowtham-portfolio
-Portfolio work in progress
+One of my first projects. Updating portfolio sooooooooon
